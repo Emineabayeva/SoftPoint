@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soft point -Creare you own software!">
+    <meta name="keywords" content="praqramis,proqram">
+    <!-- aos css link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos css link  -->
     <!-- fontawseome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <!-- fontawseome link -->
@@ -12,12 +17,29 @@
     <!-- bootstrap -->
     <link rel="shortcut icon" href="./assets/image/favicon.svg" type="image/x-icon">
     <!-- swiper  -->
+    <!-- accordion link  -->
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+    <!-- accordion link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Soft Point</title>
 </head>
 
 <body>
+    <!-- modal box -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>More Information</h2>
+            <p>This is a complete software solution for you. It is user-friendly, secure, and easy to set up, with clean
+                code for efficient performance.</p>
+            <p>Our software empowers you to push the limits of your network services and secure a better tomorrow.</p>
+        </div>
+    </div>
+    <!-- modal box -->
+
+    <!-- mobile menyu  -->
     <div class="mobile-menyu">
         <i class="fa-regular fa-circle-xmark"></i>
         <nav class="mobile-nav-links">
@@ -26,51 +48,56 @@
             <a href="#">Pricing</a>
         </nav>
     </div>
+    <!-- mobile menyu  -->
 
     <header>
-        <div class="header">
-
-            <img src="./assets/image/favicon.svg" alt="">
-            <nav class="header-links d-none d-md-block">
-                <a href="#">Feature</a>
-                <a href="#">Download</a>
-                <a href="#">Pricing</a>
-            </nav>
-            <div class="header-btns d-none d-md-block">
-                <button class="login-btn">Login</button>
-                <button class="sing-btn">Sign up</button>
+        <div class="container">
+            <div class="header">
+                <img src="./assets/image/footer/Screenshot_2024-11-10_182047-removebg-preview.png" alt="">
+                <nav class="header-links d-none d-md-block">
+                    <a href="#">Feature</a>
+                    <a href="#">Download</a>
+                    <a href="#">Pricing</a>
+                </nav>
+                <div class="header-btns d-none d-md-block">
+                    <button class="login-btn">Login</button>
+                    <button class="sing-btn">Sign up</button>
+                </div>
+                <i class="fa-solid fa-bars d-block d-md-none "></i>
             </div>
-            <i class="fa-solid fa-bars d-block d-md-none "></i>
         </div>
+
 
     </header>
 
     <section class="hero">
-        <div class="container hero-section">
-            <!-- <div class="row"> -->
-            <div class="hero-left">
-                <div class="col-12 col-md-6">
-                    <h1>Develop Your Life With One Step.</h1>
-                    <p>Pushing the possibilities of the internet. Good for
-                        the last software. Make it A software night.</p>
-
-
-                </div>
-
-            </div>
-
-            <div class="hero-right">
-                <div class="col-12 col-md-6">
-                    <div class="hero-img">
-                        <!-- <img src="./assets/image/hero/hero-img.svg" alt=""> -->
-                        <div class="hero-img2">
-                            <!-- <img src="./assets/image/hero/hero-img2.svg" alt=""> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="hero-left" data-aos="fade-right" data-aos-duration="3000">
+                        <h2>Develop Your Life With <br> <b> One Step...</b></h2>
+                        <p>Pushing the possibilities of the internet. Good for <br>
+                            the last software. <b>Make it A software night.</b> </p>
+                        <form action="">
+                            <div class="hero-input">
+                                <input type="text" placeholder="Enter your email">
+                                <button id="btn-send">Send</button>
+                            </div>
+                        </form>
+                        <div class="hero-img">
+                            <img src="./assets/image/hero/hero-icon1.svg" alt="" class="hero-img1">
+                            <img src="./assets/image/hero/hero-icon2.svg" alt="" class="hero-img2">
                         </div>
-                    </div>
 
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="hero-right">
+                        <img src="./assets/image/hero/hero-img.svg" alt="" class="w-100">
+                    </div>
                 </div>
             </div>
-            <!-- </div> -->
         </div>
     </section>
     <!-- companies swiper -->
@@ -89,9 +116,9 @@
 
                     <div class="swiper-slide">
                         <img src="./assets/image/compaines/company3.svg" alt=""">
-            </div>
+                    </div>
 
-            <div class=" swiper-slide">
+                    <div class=" swiper-slide">
                         <img src="./assets/image/compaines/company4.svg" alt="">
                     </div>
 
@@ -106,25 +133,116 @@
     </section>
     <!-- companies swiper -->
 
-    <section class="solution">
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-        <div class="solution-left">
+    <section class="Software-solution ">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Sol tərəf -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <div class="solution-card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="./assets/image/software-solution/sft.svg" alt="Easy Settings"
+                                    class="img-fluid ">
+                                <div class="solution-text">
+                                    <h5>Easy Settings</h5>
+                                    <p>A complete about-face in <br> core economic amsterdam <br> bilamco progressive.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <div class="solution-card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="./assets/image/software-solution/sft2.svg" alt="User Friendly"
+                                    class="img-fluid ">
+                                <div class="solution-text">
+                                    <h5>User Friendly</h5>
+                                    <p>A complete about-face in <br> core economic amsterdam <br> bilamco progressive.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <div class="solution-card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="./assets/image/software-solution/stf3.svg" alt="Full Secured"
+                                    class="img-fluid ">
+                                <div class="solution-text">
+                                    <h5>Full Secured</h5>
+                                    <p>A complete about-face in <br> core economic amsterdam <br> bilamco progressive.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <div class="solution-card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="./assets/image/software-solution/stf4.svg" alt="Clean Code"
+                                    class="img-fluid ">
+                                <div class="solution-text">
+                                    <h5>Clean Code</h5>
+                                    <p>A complete about-face in <br> core economic amsterdam <br> bilamco progressive.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        </div>
-    </div>
-    
-        <div class="col-12 col-md-6">
-            <div class="solution-right">
+                <!-- Sağ tərər-->
 
+                <div class="col-lg-6">
+                    <div class=" solution-right ps-md-5  text-md-start">
+                        <h2>A complete software <br>solution for you.</h2>
+                        <article class="">The source of powerful world and making future sure. <br> It's a
+                            straightforward software.</article>
+                        <article class="">Where possibilities are made possible. We must have <br> expand
+                            <strong>Possibilities of better tomorrow</strong>. The directly <br
+                                class="d-none d-md-block"> secure of your network delivering services.
+                        </article>
+                        <div class="solution-btns">
+                            <button class="btn btn-dark mb-2 mb-md-0 " id="learn-more-btn">Learn more</button>
+                            <button class="btn btn-link text-danger text-decoration-none">Ask?</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-    </div>
-</div>
     </section>
 
 
+    <section class=" Sales ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="sales-left">
+                        <h3>Monthly Sales Overview</h3>
+                        <p>This chart shows the sales revenue in USD for the <br> first five months of the year.</p>
+                        <p>In the first quarter, sales remained relatively steady, with an <br> increase in February.
+                            However, the second quarter demonstrates a <br> sharp growth in revenue, indicating a
+                            successful marketing campaign or <br> other factors that contributed to the rise in sales.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-6">
+                    <div class="sales-right">
+                        <div class="chart-container">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
 
 
     <section class="discover">
@@ -156,7 +274,7 @@
         </div>
     </section>
 
-    <section class="serving py-5">
+    <section class="serving">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -179,26 +297,182 @@
     </section>
 
     <section class="software">
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="software-left">
-<h3>Get our software</h3>
-<p>The source of powerful qorld and making your future <br>sure. It’s a  straight forward software for you.</p>
-<p>The source of powerful qorld and making future sure. <br> Its a  straight forward software. Paired with dynamic <br> image of the actual tool and the performance.</p>
-<a href="./assets/CV.pdf" download>
-    <button>Download now</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="software-left">
+                        <h3>Get our software</h3>
+                        <p>The source of powerful qorld and making your future <br>sure. It’s a straight forward
+                            software for you.</p>
+                        <p>The source of powerful qorld and making future sure. <br> Its a straight forward software.
+                            Paired with dynamic <br> image of the actual tool and the performance.</p>
+                        <a href="./assets/CV.pdf" download>
+                            <button>Download now</button>
 
-</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="software-right">
+                        <img src="./assets/image/software/software.svg" alt="" class="w-100">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
-            <div class="software-right">
-<img src="./assets/image/software/software.svg" alt="" class="w-100">
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h3>Best Pricing Plan</h3>
+            <p>Empowering the Internet Generation. Driving the Communication Revolution. <br> Technology at the speed of
+                life. Empowered by Innovation.</p>
+
+            <div class="pricing-plan">
+                <span>Monthly</span>
+                <label>
+                    <input type="checkbox" id="pricing-input">
+                </label>
+                <span>Quarterly</span>
+            </div>
+
+
+            <div class="plans row mt-4" id="plans-card" data-aos="zoom-in-up" data-aos-duration="3000">
+                <!-- js cardlari gelecek -->
+
+
+                <!-- <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">BASIC PLAN</h5>
+          <p class="card-text" >0 $</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">    <img src="./assets/image/pricing/pricing-icon.svg" alt="">Limited Acess Library </li>
+          <li class="list-group-item"> <img src="./assets/image/pricing/pricing-icon.svg" alt="">A second item</li>
+          <li class="list-group-item"><img src="./assets/image/pricing/pricing-icon.svg" alt="">A third item</li>
+          <li class="list-group-item"><img src="./assets/image/pricing/pricing-icon.svg" alt="">A third item</li>
+        </ul>
+        <div class="card-body">
+   <button>buy plan</button>
+        </div>
+      </div> -->
             </div>
         </div>
-    </div>
-</div>
+
+    </section>
+
+    <section class="swiper-img py-5">
+        <div class="container">
+            <div class="swiper imgSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img
+                            src="https://colorlib.com/wp/wp-content/uploads/sites/2/metronics-laravel-website-template.jpg.avif"
+                            alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img
+                            src="https://colorlib.com/wp/wp-content/uploads/sites/2/mvc5-admin-dashboards.jpg.avif"
+                            alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img
+                            src="https://colorlib.com/wp/wp-content/uploads/sites/2/materialize-vueatify-admin-template.jpg.avif"
+                            alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img
+                            src="https://colorlib.com/wp/wp-content/uploads/sites/2/skote-mvc5-admin-dashboard.jpg.avif"
+                            alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img
+                            src="https://colorlib.com/wp/wp-content/uploads/sites/2/veltrix-mvc5-admin-dashboard.jpg.avif"
+                            alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img
+                            src="https://colorlib.com/wp/wp-content/uploads/sites/2/vuexy-vuetify-admin-template.jpg.avif"
+                            alt="" class="w-100"></div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="accordion-section text-center ">
+        <div class="container">
+            <h3>Frequently asked questions</h3>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="accordion-left ">
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">What is Soft Point?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">Soft Point is a platform offering a variety of software solutions,
+                                    including web development, mobile applications, and software consulting services for
+                                    businesses.</p>
+                            </div>
+                        </div>
+
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">
+                                    <div class="accordion-question">What services does Soft Point offer?
+                                </button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">Soft Point offers services such as web development, mobile app
+                                    development, software integration, database management, and digital transformation
+                                    consulting.</p>
+                            </div>
+                        </div>
+
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">Does Soft Point provide customer
+                                    support?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">Yes, Soft Point provides continuous customer support, with a
+                                    dedicated support team ready to assist clients whenever needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="accordion-right">
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">How can I request a quote for my
+                                    project?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">You can request a quote by reaching out through the contact form or
+                                    contact information available on the Soft Point website.</p>
+                            </div>
+                        </div>
+
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">How long does a typical project take to
+                                    complete ?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">The duration of a project varies based on its complexity and
+                                    requirements, but Soft Point works closely with clients to meet project timelines
+                                    effectively.</p>
+                            </div>
+                        </div>
+
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">Does Soft Point work with small
+                                    businesses?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">Yes, Soft Point works with businesses of all sizes, including small
+                                    businesses, to deliver solutions tailored to their unique needs and growth goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="py-5">
@@ -206,9 +480,10 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="footer-start">
-                            <!-- <img src="./assets/image/favicon.svg" alt="" class="w-100"> -->
-                            <article>Software with new look. Live <br> the life that you expect.</article>
-                     
+                        <img src="./assets/image/footer/Screenshot_2024-11-10_182047-removebg-preview.png" alt=""
+                            class=""> <br> <br>
+                        <article>Software with new look. Live <br> the life that you expect.</article>
+
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
@@ -236,8 +511,27 @@
 
         </div>
     </footer>
+
+
+
+
+
+    <!-- aos js link  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos js link  -->
+    <!-- chart.js link  -->
+    <script src="bar-chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- chart.js link end  -->
+    <!-- sweet alert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweet alert end  -->
+    <!-- accordion js  -->
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <!-- accordion js  end -->
     <!-- swiper-js  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- swiper-js end -->
     <script src="./assets/js/script.js"></script>
 </body>
 

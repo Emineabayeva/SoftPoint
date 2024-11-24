@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Basic Plan",
+    "monthlyPrice": "0$",
+    "quarterlyPrice": "0$",
+    "features": [
+      { "feature": "Limited Access Library", "availability": "Yes" },
+      { "feature": "100+ HTML UI Elements", "availability": "No" },
+      { "feature": "Hotline Support 24/7", "availability": "No" },
+      { "feature": "API & extension support", "availability": "No" }
+    ],
+    "img": "assets/image/pricing/pricing-icon.svg",
+    "btn": "Buy Plan"
+  },
+  {
+    "name": "Premium Plan",
+    "monthlyPrice": "130$",
+    "quarterlyPrice": "78$",
+    "features": [
+      { "feature": "Limited Access Library", "availability": "Yes" },
+      { "feature": "100+ HTML UI Elements", "availability": "No" },
+      { "feature": "Hotline Support 24/7", "availability": "No" },
+      { "feature": "API & extension support", "availability": "No" }
+    ],
+    "img": "assets/image/pricing/pricing-icon.svg",
+    "btn": "Buy Plan"
+  },
+  {
+    "name": "Ultimate Plan",
+    "monthlyPrice": "210$",
+    "quarterlyPrice": "126$",
+    "features": [
+      { "feature": "Limited Access Library", "availability": "Yes" },
+      { "feature": "100+ HTML UI Elements", "availability": "No" },
+      { "feature": "Hotline Support 24/7", "availability": "No" },
+      { "feature": "API & extension support", "availability": "No" }
+    ],
+    "img": "assets/image/pricing/pricing-icon.svg",
+    "btn": "Buy Plan"
+  }
+]
